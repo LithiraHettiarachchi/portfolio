@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import Logo from "/assets/Logo.svg"; // Make sure the path matches your file structure
+import Logo from "/public/Logo.svg"; // Make sure the path matches your file structure
 
 export default function Navbar() {
   const [activeSection, setActiveSection] = useState("home");
@@ -56,9 +56,9 @@ export default function Navbar() {
 
         {/* Resume Download */}
         <a
-          href="/LithiraHettiarachchi_Resume.pdf" // Place the PDF in public folder
+          href="public/L.R. Hettiarachchi_Resume.pdf" 
           download
-          className="bg-gradient-to-r from-blue-600 to-purple-600 text-white font-bold px-4 py-2 rounded-lg shadow-md hover:scale-105 transform transition-all duration-300"
+          className="bg-gradient-to-r from-blue-600 to-purple-600 !text-white font-bold px-4 py-2 rounded-lg shadow-md hover:scale-105 transform transition-all duration-300"
         >
           Resume
         </a>
