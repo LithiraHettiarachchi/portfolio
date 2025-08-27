@@ -56,8 +56,8 @@ export default function Navbar() {
 
         {/* Resume Download */}
         <a
-          href="/public/LithiraHettiarachchi.pdf" 
-          download
+          href="/portfolio/LithiraHettiarachchi.pdf" 
+          download="LithiraHettiarachchi.pdf"
           className="bg-gradient-to-r from-blue-600 to-purple-600 !text-white font-bold px-4 py-2 rounded-lg shadow-md hover:scale-105 transform transition-all duration-300"
         >
           Resume
