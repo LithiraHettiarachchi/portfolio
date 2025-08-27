@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import Logo from "../assets/Logo.svg"; // Make sure the path matches your file structure
+import Logo from "/assets/Logo.svg"; // Make sure the path matches your file structure
 
 export default function Navbar() {
   const [activeSection, setActiveSection] = useState("home");
