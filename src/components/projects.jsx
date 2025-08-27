@@ -31,16 +31,16 @@ export default function Projects() {
     {
       id: 5,
       title: "Cruise Ship Management System",
-      desc: "AI-driven movie recommendation system.",
-      tech: ["Java", "Obeject Oriented Programming (OOP)"],
-      link: "https://github.com/yourusername/project5",
+      desc: "A system to manage cruise ship operations, including booking, scheduling, and customer management.",
+      tech: ["Java", "Object Oriented Programming (OOP)"],
+      link: "https://github.com/LithiraHettiarachchi/cruiseShipManagement",
     },
     {
       id: 6,
       title: "Gesture Recognition System",
       desc: "A system to identify hand gestures of english alphabet and interpret corresponding letters.",
       tech: ["Python", "OpenCV", "TensorFlow", "Matplotlib", "Keras"],
-      link: "https://github.com/yourusername/project6",
+      link: "https://github.com/LithiraHettiarachchi/gestureRecognitionCNN",
     },
   ];
 
