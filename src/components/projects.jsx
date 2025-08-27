@@ -32,7 +32,7 @@ export default function Projects() {
       id: 5,
       title: "Cruise Ship Management System",
       desc: "A system to manage cruise ship operations, including booking, scheduling, and customer management.",
-      tech: ["Java", "Object Oriented Programming (OOP)"],
+      tech: ["Java", "Object Oriented Programming"],
       link: "https://github.com/LithiraHettiarachchi/cruiseShipManagement",
     },
     {
