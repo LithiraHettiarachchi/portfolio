@@ -28,6 +28,7 @@ export default function Navbar() {
     { id: "home", label: "Home" },
     { id: "projects", label: "Projects" },
     { id: "skills", label: "Skills" },
+    { id: "conference", label: "Conference" },
     { id: "contact", label: "Contact" },
   ];
 
@@ -56,8 +57,8 @@ export default function Navbar() {
 
         {/* Resume Download */}
         <a
-          href="/portfolio/LithiraHettiarachchi.pdf" 
-          download="LithiraHettiarachchi.pdf"
+          href="/portfolio/LithiraHettiarachchi_Resume.pdf" 
+          download="LithiraHettiarachchi_Resume.pdf"
           className="bg-gradient-to-r from-blue-600 to-purple-600 !text-white font-bold px-4 py-2 rounded-lg shadow-md hover:scale-105 transform transition-all duration-300"
         >
           Resume
