@@ -55,24 +55,24 @@ export default function ConferenceSection() {
               <strong>Presentation:</strong> An Analysis of Machine Learning and Time Series for Predicting EV 
 Charging Demand with Traffic and Weather Data 
             </p>
-            <p className="text-gray-400 mb-2">📍 Colombo, Sri Lanka</p>
+            <p className="text-gray-400 mb-2">📍 Jaffna, Sri Lanka</p>
             <p className="text-gray-400 mb-6">📅 March 2025</p>
 
             <p className="text-lg text-gray-200 leading-relaxed max-w-3xl mx-auto">
               I presented my research abstract focusing on integrating traffic
               data with energy consumption forecasting at EV charging stations.
-              This work highlights how real-time traffic patterns can influence
-              charging demand and optimal allocation strategies for sustainable
+              This work highlights how real-time traffic patterns and weather conditions
+              can influence charging demand and optimal allocation strategies for sustainable
               EV infrastructure.
             </p>
 
             <a
-              href="#"
+              href="https://www.researchgate.net/publication/390284583_An_Analysis_of_Machine_Learning_and_Time_Series_for_Predicting_EV_Charging_Demand_with_Traffic_and_Weather_Data?_sg%5B0%5D=8YkwR8i-Y70Z7Fbl6xOAB9hEtmB_vh5FHxfXJ298RJoThYhajoEipWYWzkDxF_PbMa0-zRoKU_UbvKhbUC6PVo571BpDT4qBLLqVH2kY.AB3XAK8N6uycP8-8PQLZmHewjrBHwHOHB4i805BYgF6AG1nKF1WsHL3GiealRuPs9D6V1UPkwLEUXokrDcmcmA&_tp=eyJjb250ZXh0Ijp7ImZpcnN0UGFnZSI6Il9kaXJlY3QiLCJwYWdlIjoicHJvZmlsZSIsInByZXZpb3VzUGFnZSI6InByb2ZpbGUiLCJwb3NpdGlvbiI6InBhZ2VDb250ZW50In19"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-block mt-8 px-8 py-4 bg-gradient-to-r from-blue-600 to-purple-600 rounded-2xl shadow-md hover:scale-105 transform transition duration-300 text-lg !text-white"
             >
-              View Abstract / Slides
+              View Abstract
             </a>
           </motion.div>
         )}
