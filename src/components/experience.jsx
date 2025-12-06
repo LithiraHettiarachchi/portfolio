@@ -23,7 +23,7 @@ export default function Experience() {
     return (
         <section
             id="experience"
-            className="relative min-h-screen flex flex-col items-center justify-center bg-gradient-to-br from-[#1c2c4d] to-[#141b2c] text-white px-6 py-12"
+            className="relative min-h-screen flex flex-col items-center justify-center bg-gray-900 text-white px-6 py-12"
         >
             <h2 className="text-5xl font-bold text-white mb-12">Work Experience</h2>
 

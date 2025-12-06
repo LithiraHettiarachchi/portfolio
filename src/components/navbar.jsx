@@ -28,6 +28,7 @@ export default function Navbar() {
     { id: "home", label: "Home" },
     { id: "projects", label: "Projects" },
     { id: "skills", label: "Skills" },
+    { id: "experience", label: "Experience" },
     { id: "conference", label: "Conference" },
     { id: "contact", label: "Contact" },
   ];
@@ -45,11 +46,10 @@ export default function Navbar() {
           <a
             key={link.id}
             href={`#${link.id}`}
-            className={`transition-colors duration-300 ${
-              activeSection === link.id
-                ? "text-blue-400 font-semibold border-b-2 border-blue-600 text-xl"
-                : "hover:text-blue-400"
-            }`}
+            className={`transition-colors duration-300 ${activeSection === link.id
+              ? "text-blue-400 font-semibold border-b-2 border-blue-600 text-xl"
+              : "hover:text-blue-400"
+              }`}
           >
             {link.label}
           </a>
@@ -57,7 +57,7 @@ export default function Navbar() {
 
         {/* Resume Download */}
         <a
-          href="/portfolio/LithiraHettiarachchi_Resume.pdf" 
+          href="/portfolio/LithiraHettiarachchi_Resume.pdf"
           download="LithiraHettiarachchi_Resume.pdf"
           className="bg-gradient-to-r from-blue-600 to-purple-600 !text-white font-bold px-4 py-2 rounded-lg shadow-md hover:scale-105 transform transition-all duration-300"
         >
