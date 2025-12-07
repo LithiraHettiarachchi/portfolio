@@ -47,7 +47,7 @@ export default function Navbar() {
   ];
 
   return (
-    <nav className="flex justify-between items-center px-4 md:px-6 lg:px-8 py-3 md:py-4 bg-gray-800 text-white fixed top-2 md:top-4 left-1/2 transform -translate-x-1/2 w-[95%] md:w-[90%] max-w-5xl rounded-xl md:rounded-2xl shadow-lg z-50 backdrop-blur-md bg-opacity-90 border-b-4 border-blue-500">
+    <nav className="flex justify-between items-center px-4 md:px-6 lg:px-8 py-3 md:py-4 bg-gray-800 text-white fixed top-2 md:top-4 left-1/2 transform -translate-x-1/2 w-[95%] md:w-[90%] max-w-none lg:max-w-5xl rounded-xl md:rounded-2xl shadow-lg z-50 backdrop-blur-md bg-opacity-90 border-b-4 border-blue-500">
       {/* Logo */}
       <div className="flex items-center cursor-pointer" onClick={handleLogoClick}>
         <img
@@ -64,8 +64,8 @@ export default function Navbar() {
             key={link.id}
             href={`#${link.id}`}
             className={`transition-colors duration-300 ${activeSection === link.id
-                ? "text-blue-400 font-semibold border-b-2 border-blue-600 text-lg xl:text-xl"
-                : "hover:text-blue-400 text-base"
+              ? "text-blue-400 font-semibold border-b-2 border-blue-600 text-lg xl:text-xl"
+              : "hover:text-blue-400 text-base"
               }`}
           >
             {link.label}
@@ -98,8 +98,8 @@ export default function Navbar() {
       {/* Mobile Menu */}
       <div
         className={`lg:hidden absolute top-full left-0 right-0 mt-2 mx-2 md:mx-4 bg-gray-800 rounded-xl shadow-2xl backdrop-blur-md bg-opacity-95 border-2 border-blue-500 overflow-hidden transition-all duration-300 ${isMobileMenuOpen
-            ? "max-h-[28rem] opacity-100"
-            : "max-h-0 opacity-0 pointer-events-none"
+          ? "max-h-[28rem] opacity-100"
+          : "max-h-0 opacity-0 pointer-events-none"
           }`}
       >
         <div className="flex flex-col p-4 space-y-2">
@@ -109,8 +109,8 @@ export default function Navbar() {
               href={`#${link.id}`}
               onClick={handleNavClick}
               className={`px-4 py-3 rounded-lg transition-all duration-300 text-center ${activeSection === link.id
-                  ? "bg-blue-600 text-white font-semibold"
-                  : "hover:bg-gray-700 text-gray-200"
+                ? "bg-blue-600 text-white font-semibold"
+                : "hover:bg-gray-700 text-gray-200"
                 }`}
             >
               {link.label}

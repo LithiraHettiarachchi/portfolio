@@ -100,8 +100,9 @@ button:focus-visible {
 .stars2,
 .stars3 {
   position: absolute;
-  width: 200%;
-  height: 200%;
+  width: 100%;
+  height: 100%;
+  max-width: 100vw;
   background-repeat: repeat;
   background-size: 200px 200px;
   animation: moveStars 60s linear infinite;
