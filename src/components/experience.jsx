@@ -23,9 +23,9 @@ export default function Experience() {
     return (
         <section
             id="experience"
-            className="relative min-h-screen flex flex-col items-center justify-center bg-gray-900 text-white px-6 py-12"
+            className="relative min-h-screen flex flex-col items-center justify-center bg-gray-900 text-white px-4 md:px-6 py-12 md:py-16"
         >
-            <h2 className="text-5xl font-bold text-white mb-12">Work Experience</h2>
+            <h2 className="text-4xl md:text-5xl font-bold text-white mb-8 md:mb-12">Work Experience</h2>
 
             <AnimatePresence mode="wait">
                 {!showDetails ? (
@@ -36,12 +36,12 @@ export default function Experience() {
                         exit={{ opacity: 0, scale: 0.95 }}
                         transition={{ duration: 0.4 }}
                         onClick={() => setShowDetails(true)}
-                        className="cursor-pointer bg-gradient-to-r from-blue-600 to-purple-600 rounded-3xl shadow-2xl p-16 text-center max-w-4xl w-full hover:scale-105 transition-transform duration-300"
+                        className="cursor-pointer bg-gradient-to-r from-blue-600 to-purple-600 rounded-2xl md:rounded-3xl shadow-2xl p-8 md:p-12 lg:p-16 text-center max-w-4xl w-full hover:scale-105 transition-transform duration-300"
                     >
-                        <h3 className="text-4xl font-bold mb-4">
+                        <h3 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-3 md:mb-4">
                             {experience.company}
                         </h3>
-                        <p className="text-2xl font-semibold mb-2 opacity-90">
+                        <p className="text-xl md:text-2xl font-semibold mb-2 opacity-90">
                             {experience.position}
                         </p>
                         <p className="text-xl opacity-80">{experience.period}</p>
@@ -53,20 +53,20 @@ export default function Experience() {
                         animate={{ opacity: 1, y: 0 }}
                         exit={{ opacity: 0, y: 30 }}
                         transition={{ duration: 0.4 }}
-                        className="max-w-5xl w-full text-left bg-gray-800/70 rounded-3xl p-12"
+                        className="max-w-5xl w-full text-left bg-gray-800/70 rounded-2xl md:rounded-3xl p-6 md:p-10 lg:p-12"
                     >
                         <button
                             onClick={() => setShowDetails(false)}
-                            className="flex items-center gap-2 px-6 py-3 mb-8 bg-gray-700 rounded-lg hover:bg-gray-600 transition"
+                            className="flex items-center gap-2 px-4 md:px-6 py-2 md:py-3 mb-6 md:mb-8 bg-gray-700 rounded-lg hover:bg-gray-600 transition text-sm md:text-base"
                         >
                             <ArrowLeft size={20} /> Back
                         </button>
 
-                        <div className="text-center mb-10">
-                            <h3 className="text-4xl font-bold text-white mb-2 bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent">
+                        <div className="text-center mb-8 md:mb-10">
+                            <h3 className="text-2xl md:text-3xl lg:text-4xl font-bold text-white mb-2 bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent">
                                 {experience.company}
                             </h3>
-                            <p className="text-2xl font-semibold text-gray-200 mb-2">
+                            <p className="text-xl md:text-2xl font-semibold text-gray-200 mb-2">
                                 {experience.position}
                             </p>
                             <p className="text-lg text-gray-400 font-medium">
@@ -74,15 +74,15 @@ export default function Experience() {
                             </p>
                         </div>
 
-                        <div className="space-y-5">
-                            <h4 className="text-2xl font-semibold text-gray-100 mb-4">Key Achievements</h4>
+                        <div className="space-y-4 md:space-y-5">
+                            <h4 className="text-xl md:text-2xl font-semibold text-gray-100 mb-3 md:mb-4">Key Achievements</h4>
                             {experience.achievements.map((achievement, index) => (
                                 <div
                                     key={index}
-                                    className="flex items-start gap-4 group hover:translate-x-2 transition-transform duration-300"
+                                    className="flex items-start gap-3 md:gap-4 group hover:translate-x-2 transition-transform duration-300"
                                 >
-                                    <div className="flex-shrink-0 w-2 h-2 mt-2 rounded-full bg-gradient-to-r from-blue-400 to-purple-400 group-hover:scale-150 transition-transform duration-300"></div>
-                                    <p className="text-gray-300 text-lg leading-relaxed">
+                                    <div className="flex-shrink-0 w-2 h-2 mt-1.5 md:mt-2 rounded-full bg-gradient-to-r from-blue-400 to-purple-400 group-hover:scale-150 transition-transform duration-300"></div>
+                                    <p className="text-gray-300 text-sm md:text-base lg:text-lg leading-relaxed">
                                         {achievement}
                                     </p>
                                 </div>

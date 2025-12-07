@@ -24,8 +24,8 @@ export default function Projects() {
     {
       id: 4,
       title: "AgriVerse",
-      desc: "An application that forecasts Sri Lanka’s paddy production using machine learning, based on data from 1979 to 2024.",
-      tech: ["Python", "Mchine Learning", "FastAPI"],
+      desc: "An application that forecasts Sri Lanka's paddy production using machine learning, based on data from 1979 to 2024.",
+      tech: ["Python", "Machine Learning", "FastAPI"],
       link: "https://github.com/LithiraHettiarachchi/AgriVerse_RicePrediction",
     },
     {
@@ -45,28 +45,28 @@ export default function Projects() {
   ];
 
   return (
-    <section id="projects" 
-    className="min-h-screen bg-gradient-to-b from-gray-900 via-gray-850 to-gray-800 flex flex-col items-center py-16 px-6">
-      <h2 className="text-5xl font-bold text-white mb-12">Projects</h2>
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-12 w-full max-w-7xl">
+    <section id="projects"
+      className="min-h-screen bg-gradient-to-b from-gray-900 via-gray-850 to-gray-800 flex flex-col items-center py-16 md:py-20 px-4 md:px-6">
+      <h2 className="text-4xl md:text-5xl font-bold text-white mb-8 md:mb-12">Projects</h2>
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 lg:gap-12 w-full max-w-7xl">
         {projects.map((project) => (
           <a
             key={project.id}
             href={project.link}
             target="_blank"
             rel="noopener noreferrer"
-            className="bg-gradient-to-r from-blue-400/80 via-blue-300/70 via-blue-200/60 to-blue-100/50 
+            className="bg-gradient-to-br from-blue-600 via-blue-500 to-blue-400 
                 !text-white rounded-2xl flex flex-col justify-between 
-                h-64 p-6 shadow-lg transition-transform duration-300 
-                hover:scale-105 hover:shadow-2xl hover:from-blue-500/90 hover:via-blue-300/60 hover:to-blue-100/50"
+                min-h-[320px] md:h-80 p-5 md:p-6 shadow-lg transition-all duration-300 
+                hover:scale-105 hover:shadow-2xl hover:from-blue-700 hover:via-blue-600 hover:to-blue-500"
           >
             <div className="flex flex-col items-center text-center">
-              <h3 className="text-2xl font-semibold mb-2">{project.title}</h3>
-              <p className="text-base opacity-90">{project.desc}</p>
+              <h3 className="text-xl md:text-2xl font-semibold mb-3">{project.title}</h3>
+              <p className="text-sm md:text-base opacity-95 leading-relaxed">{project.desc}</p>
             </div>
-            <div className="mt-4">
-              <p className="text-lg font-semibold">Tech Stack:</p>
-              <p className="text-lg opacity-90">{project.tech.join(" • ")}</p>
+            <div className="mt-4 pt-4 border-t border-white/30">
+              <p className="text-base md:text-lg font-semibold mb-1">Tech Stack:</p>
+              <p className="text-sm md:text-base opacity-90">{project.tech.join(" • ")}</p>
             </div>
           </a>
         ))}

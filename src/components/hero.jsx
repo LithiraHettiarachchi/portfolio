@@ -1,11 +1,11 @@
 
-import myImage from "../assets/myphoto.jpg"; // adjust the path
+import myImage from "../assets/myphoto.jpg";
 
 export default function Hero() {
   return (
     <section
       id="home"
-      className="min-h-screen flex flex-col lg:flex-row justify-center items-center bg-gradient-to-b from-gray-900 to-gray-800 text-white px-6"
+      className="min-h-screen flex flex-col lg:flex-row justify-center items-center bg-gradient-to-b from-gray-900 to-gray-800 text-white px-4 md:px-6 pt-20 md:pt-24 lg:pt-0"
     >
       <div className="absolute inset-0 overflow-hidden">
         <div className="stars" />
@@ -13,30 +13,31 @@ export default function Hero() {
         <div className="stars3" />
       </div>
       {/* Left Side - Text */}
-      <div className="text-center lg:text-left max-w-2xl lg:w-1/2 space-y-6">
-        <p className="text-xl text-gray-400 font-semibold">Welcome to My Portfolio</p>
-        <h1 className="text-9xl font-bold">I’m Lithira Hettiarachchi</h1>
-        <p className="text-4xl text-gray-300">
+      <div className="text-center lg:text-left max-w-2xl lg:w-1/2 space-y-4 md:space-y-6 z-10">
+        <p className="text-base md:text-lg lg:text-xl text-gray-400 font-semibold">Welcome to My Portfolio</p>
+        <h1 className="text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold leading-tight">
+          I'm Lithira Hettiarachchi
+        </h1>
+        <p className="text-lg md:text-xl lg:text-2xl xl:text-3xl text-gray-300">
           A passionate full-stack developer exploring the world of code and creativity.
         </p>
       </div>
 
       {/* Right Side - Image */}
-        <div className="relative mt-10 lg:mt-0 lg:ml-12 lg:w-1/2 flex justify-center">
+      <div className="relative mt-8 md:mt-10 lg:mt-0 lg:ml-12 lg:w-1/2 flex justify-center z-10">
         {/* Gradient frame wrapper */}
-        <div className="relative p-1 rounded-3xl bg-gradient-to-r from-purple-800 via-purple-500 to-purple-300 mt-6">
-            <div className="relative w-64 h-80 lg:w-96 lg:h-[500px]">
+        <div className="relative p-1 rounded-3xl bg-gradient-to-r from-purple-800 via-purple-500 to-purple-300">
+          <div className="relative w-56 h-72 sm:w-64 sm:h-80 md:w-72 md:h-96 lg:w-80 lg:h-[420px] xl:w-96 xl:h-[500px]">
             <img
-                src={myImage}
-                alt="Lithira"
-                className="w-full h-full object-cover rounded-2xl shadow-2xl"
+              src={myImage}
+              alt="Lithira"
+              className="w-full h-full object-cover rounded-2xl shadow-2xl"
             />
             {/* Gradient overlay for blending */}
-            <div className="absolute inset-0 bg-gradient-to-b from-gray-900/60 to-transparent rounded-2xl" />
-            </div>
+            <div className="absolute inset-0 bg-gradient-to-b from-gray-900/40 to-transparent rounded-2xl" />
+          </div>
         </div>
-        </div>
-
+      </div>
     </section>
   );
 }

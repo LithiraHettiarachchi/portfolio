@@ -8,9 +8,9 @@ export default function ConferenceSection() {
   return (
     <section
       id="conference"
-      className="relative min-h-screen flex flex-col items-center justify-center bg-gray-900 text-white px-6 py-12"
+      className="relative min-h-screen flex flex-col items-center justify-center bg-gray-900 text-white px-4 md:px-6 py-12 md:py-16"
     >
-      <h2 className="text-5xl font-bold text-white mb-12">
+      <h2 className="text-4xl md:text-5xl font-bold text-white mb-8 md:mb-12">
         Research & Conference
       </h2>
 
@@ -23,9 +23,9 @@ export default function ConferenceSection() {
             exit={{ opacity: 0, scale: 0.95 }}
             transition={{ duration: 0.4 }}
             onClick={() => setShowDetails(true)}
-            className="cursor-pointer bg-gradient-to-r from-blue-600 to-purple-600 rounded-3xl shadow-2xl p-16 text-center max-w-4xl w-full"
+            className="cursor-pointer bg-gradient-to-r from-blue-600 to-purple-600 rounded-2xl md:rounded-3xl shadow-2xl p-8 md:p-12 lg:p-16 text-center max-w-4xl w-full"
           >
-            <h2 className="text-4xl font-bold">
+            <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold">
               AMCEHA 2025 – ADVANCED MATERIALS FOR CLEAN ENERGY AND HEALTH
               APPLICATIONS
             </h2>
@@ -38,22 +38,22 @@ export default function ConferenceSection() {
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: 30 }}
             transition={{ duration: 0.4 }}
-            className="max-w-5xl w-full text-center bg-gray-800/70 rounded-3xl p-12"
+            className="max-w-5xl w-full text-center bg-gray-800/70 rounded-2xl md:rounded-3xl p-6 md:p-10 lg:p-12"
           >
             <button
               onClick={() => setShowDetails(false)}
-              className="flex items-center gap-2 px-6 py-3 mb-8 bg-gray-700 rounded-lg hover:bg-gray-600 transition mx-auto"
+              className="flex items-center gap-2 px-4 md:px-6 py-2 md:py-3 mb-6 md:mb-8 bg-gray-700 rounded-lg hover:bg-gray-600 transition mx-auto text-sm md:text-base"
             >
               <ArrowLeft size={20} /> Back
             </button>
 
-            <h2 className="text-4xl font-bold mb-6">
+            <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-4 md:mb-6">
               AMCEHA 2025 – International Conference on Advanced Materials for
               Clean Energy and Health Applications
             </h2>
             <p className="text-lg text-gray-300 mb-4">
-              <strong>Presentation:</strong> An Analysis of Machine Learning and Time Series for Predicting EV 
-Charging Demand with Traffic and Weather Data 
+              <strong>Presentation:</strong> An Analysis of Machine Learning and Time Series for Predicting EV
+              Charging Demand with Traffic and Weather Data
             </p>
             <p className="text-gray-400 mb-2">📍 Jaffna, Sri Lanka</p>
             <p className="text-gray-400 mb-6">📅 March 2025</p>
