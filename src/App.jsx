@@ -12,7 +12,7 @@ import Conference from "./components/conference";
 
 function App() {
   return (
-    <div>
+    <div className="w-full max-w-full overflow-x-hidden">
       <Navbar />
       <Hero />
       <Projects />
